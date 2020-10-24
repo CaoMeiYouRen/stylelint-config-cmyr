@@ -19,5 +19,10 @@ module.exports = {
         'no-descending-specificity': null,
         'length-zero-no-unit': null,
         'block-no-empty': null,
+        'declaration-block-semicolon-newline-after': null,
+        'selector-list-comma-newline-after': null,
+        'no-missing-end-of-source-newline': null,
+        'selector-combinator-space-after': null,
+        'selector-combinator-space-before': null,
     },
 }
