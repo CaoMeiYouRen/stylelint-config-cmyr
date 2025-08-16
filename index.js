@@ -3,7 +3,6 @@ const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
 module.exports = {
     extends: [
         'stylelint-config-standard',
-        'stylelint-config-rational-order',
     ],
     plugins: [
         'stylelint-scss',

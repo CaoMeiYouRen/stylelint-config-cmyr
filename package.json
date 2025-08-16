@@ -36,14 +36,12 @@
     "cross-env": "*",
     "eslint": ">=6",
     "stylelint": "*",
-    "stylelint-config-rational-order": "*",
     "stylelint-config-standard": "*",
     "stylelint-order": "*",
     "stylelint-scss": "*"
   },
   "peerDependencies": {
     "stylelint": "*",
-    "stylelint-config-rational-order": "*",
     "stylelint-config-standard": "*",
     "stylelint-order": "*",
     "stylelint-scss": "*"
