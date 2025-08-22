@@ -4,17 +4,28 @@
   "author": "CaoMeiYouRen",
   "description": "草梅友仁个人使用的 stylelint 检测规范",
   "license": "MIT",
+  "type": "module",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "dist"
   ],
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
   "engines": {
-    "node": ">=8"
+    "node": ">=16"
   },
   "scripts": {
     "deploy-beta": "nrm use npm && npm publish --tag beta",
     "deploy": "nrm use npm && npm publish",
-    "lint": "cross-env NODE_ENV=production eslint --fix --ext .js"
+    "lint": "cross-env NODE_ENV=production eslint --fix --ext .js",
+    "release": "semantic-release",
+    "build": "cross-env NODE_ENV=production tsdown"
   },
   "keywords": [
     "code",
@@ -32,18 +43,27 @@
   },
   "homepage": "https://github.com/CaoMeiYouRen/stylelint-config-cmyr#readme",
   "devDependencies": {
-    "@types/node": "*",
-    "cross-env": "*",
-    "eslint": ">=6",
-    "stylelint": "*",
-    "stylelint-config-standard": "*",
-    "stylelint-order": "*",
-    "stylelint-scss": "*"
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^24.3.0",
+    "conventional-changelog-cmyr-config": "^2.1.2",
+    "cross-env": "^10.0.0",
+    "eslint": "^9.33.0",
+    "stylelint": "^16.23.1",
+    "stylelint-config-standard": "^39.0.0",
+    "stylelint-order": "^7.0.0",
+    "stylelint-scss": "^6.12.1",
+    "semantic-release": "^19.0.5",
+    "tsdown": "^0.14.1",
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "stylelint": "*",
     "stylelint-config-standard": "*",
     "stylelint-order": "*",
     "stylelint-scss": "*"
+  },
+  "changelog": {
+    "language": "zh"
   }
 }

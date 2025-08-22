@@ -1,6 +1,5 @@
-'use strict'
-const IS_PROD = process.env.NODE_ENV === 'production' ? 2 : 0
-module.exports = {
+/** @type {import('stylelint').Config} */
+export default {
     extends: [
         'stylelint-config-standard',
     ],
