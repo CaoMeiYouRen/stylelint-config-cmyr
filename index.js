@@ -14,7 +14,6 @@ export default {
         'at-rule-no-unknown': null,
         'no-empty-source': null,
         'font-family-no-missing-generic-family-keyword': null,
-        'no-descending-specificity': null,
         'length-zero-no-unit': null,
         'block-no-empty': null,
         'declaration-block-semicolon-newline-after': null,

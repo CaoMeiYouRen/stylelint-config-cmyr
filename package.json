@@ -49,11 +49,12 @@
     "conventional-changelog-cmyr-config": "^2.1.2",
     "cross-env": "^10.0.0",
     "eslint": "^9.33.0",
+    "eslint-config-cmyr": "2.0.0-beta.15",
+    "semantic-release": "^19.0.5",
     "stylelint": "^16.23.1",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-order": "^7.0.0",
     "stylelint-scss": "^6.12.1",
-    "semantic-release": "^19.0.5",
     "tsdown": "^0.14.1",
     "typescript": "^5.9.2"
   },
