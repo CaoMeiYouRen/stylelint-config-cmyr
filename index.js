@@ -9,6 +9,16 @@ export default {
         'stylelint-scss',
         'stylelint-order',
     ],
+    overrides: [
+        {
+            files: ['**/*.vue', '**/*.html'],
+            customSyntax: 'postcss-html',
+        },
+        {
+            files: ['**/*.scss', '**/*.sass'],
+            customSyntax: 'postcss-scss',
+        },
+    ],
     rules: {
 
         'at-rule-no-unknown': null,
