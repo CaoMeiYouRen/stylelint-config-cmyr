@@ -70,5 +70,9 @@ export default {
         ],
         // @import 导入风格
         'import-notation': 'string',
+
+        'alpha-value-notation': 'number', // 强制使用数字而不是百分比来表示 alpha 通道的值
+        'color-hex-length': 'short', // 强制使用简写的十六进制颜色值（例如 #fff 而不是 #ffffff）
+        'color-function-notation': 'modern', // 强制使用现代的颜色函数表示法（例如 rgb() 而不是 rgba()）
     },
 }
