@@ -1,5 +1,12 @@
 # stylelint-config-cmyr
 
+# [1.0.0-beta.2](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2025-08-24)
+
+
+### 🐛 Bug 修复
+
+* 添加颜色相关规则以增强样式lint配置 ([20e135b](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/commit/20e135b))
+
 # 1.0.0-beta.1 (2025-08-24)
 
 
