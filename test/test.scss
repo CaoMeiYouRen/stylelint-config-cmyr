@@ -9,7 +9,7 @@ $font-family-base: "Helvetica Neue", arial, sans-serif;
 $font-size-base: 16px;
 $line-height-base: 1.6;
 $border-radius: 4px;
-$box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+$box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
 
 // Mixin 定义
 @mixin button-style($bg-color, $text-color: #ffffff) {
