@@ -2,25 +2,20 @@
 export default {
     extends: [
         'stylelint-config-standard',
+        'stylelint-config-standard-scss',
+        'stylelint-config-html',
     ],
     plugins: [
         'stylelint-scss',
         'stylelint-order',
     ],
     rules: {
-        indentation: [
-            4,
-        ],
+
         'at-rule-no-unknown': null,
         'no-empty-source': null,
         'font-family-no-missing-generic-family-keyword': null,
         'length-zero-no-unit': null,
         'block-no-empty': null,
-        'declaration-block-semicolon-newline-after': null,
-        'selector-list-comma-newline-after': null,
-        'no-missing-end-of-source-newline': null,
-        'selector-combinator-space-after': null,
-        'selector-combinator-space-before': null,
         'scss/at-rule-no-unknown': true,
 
         // Vue 特有的规则

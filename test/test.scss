@@ -1,0 +1,252 @@
+
+// 变量定义
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$success-color: #27ae60;
+$warning-color: #f39c12;
+$danger-color: #e74c3c;
+$font-family-base: "Helvetica Neue", arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$border-radius: 4px;
+$box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+
+// Mixin 定义
+@mixin button-style($bg-color, $text-color: #ffffff) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 12px 24px;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translateY(0);
+    }
+
+    &:disabled {
+        background-color: lighten($bg-color, 20%);
+        cursor: not-allowed;
+        transform: none;
+    }
+}
+
+@mixin card-style {
+    background-color: #fff;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+    padding: 24px;
+    margin-bottom: 20px;
+}
+
+// 基础样式
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $secondary-color;
+    margin: 0;
+    padding: 0;
+}
+
+// 组件样式
+.navbar {
+    background-color: $primary-color;
+    padding: 1rem 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        .nav-item {
+            margin-left: 2rem;
+
+            .nav-link {
+                color: #fff;
+                text-decoration: none;
+                font-weight: 500;
+
+                &:hover {
+                    color: lighten(#fff, 20%);
+                }
+
+                &.active {
+                    border-bottom: 2px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+// 按钮组件
+.btn {
+    display: inline-block;
+
+    &.btn-primary {
+        @include button-style($primary-color);
+    }
+
+    &.btn-success {
+        @include button-style($success-color);
+    }
+
+    &.btn-warning {
+        @include button-style($warning-color);
+    }
+
+    &.btn-danger {
+        @include button-style($danger-color);
+    }
+}
+
+// 卡片组件
+.card {
+    @include card-style;
+
+    .card-header {
+        font-size: 1.2em;
+        font-weight: 600;
+        margin-bottom: 16px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e1e8ed;
+    }
+
+    .card-body {
+        line-height: 1.5;
+    }
+
+    .card-footer {
+        margin-top: 16px;
+        padding-top: 8px;
+        border-top: 1px solid #e1e8ed;
+        text-align: right;
+    }
+}
+
+// 表单样式
+.form-group {
+    margin-bottom: 1rem;
+
+    .form-label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+        color: $secondary-color;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: $border-radius;
+        font-size: $font-size-base;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+        }
+
+        &.is-invalid {
+            border-color: $danger-color;
+
+            &:focus {
+                box-shadow: 0 0 0 2px rgba($danger-color, 0.2);
+            }
+        }
+    }
+
+    .form-text {
+        font-size: 0.875rem;
+        color: #6c757d;
+        margin-top: 0.25rem;
+    }
+}
+
+// 响应式布局
+@media (width <= 768px) {
+    .navbar {
+        .container {
+            flex-direction: column;
+
+            .nav-menu {
+                margin-top: 1rem;
+
+                .nav-item {
+                    margin-left: 0;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
+
+// 工具类
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mb-1 {
+    margin-bottom: 0.25rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
