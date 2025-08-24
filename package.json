@@ -25,6 +25,7 @@
     "deploy": "nrm use npm && npm publish",
     "lint": "cross-env NODE_ENV=production eslint --fix --ext .js",
     "lint:css": "stylelint ./**/*.{css,scss,sass,vue} --fix",
+    "test": "stylelint test/**/*.{css,scss,sass,vue}",
     "release": "semantic-release",
     "build": "cross-env NODE_ENV=production tsdown"
   },

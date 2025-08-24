@@ -24,7 +24,7 @@ jobs:
           cache: "pnpm"
       - run: pnpm i --frozen-lockfile
       - run: pnpm run lint
-    #   - run: pnpm run test
+      - run: pnpm run test
       - run: pnpm run build
   auto-merge:
     needs: test
