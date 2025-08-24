@@ -48,7 +48,9 @@
     "stylelint-config-standard": "^39.0.0",
     "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-order": "^7.0.0",
-    "stylelint-scss": "^6.12.1"
+    "stylelint-scss": "^6.12.1",
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9"
   },
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.2",
@@ -58,18 +60,14 @@
     "cross-env": "^10.0.0",
     "eslint": "^9.33.0",
     "eslint-config-cmyr": "2.0.0-beta.15",
-    "postcss": "^8.5.6",
-    "postcss-html": "^1.8.0",
-    "postcss-scss": "^4.0.9",
     "semantic-release": "^19.0.5",
     "stylelint": "^16.23.1",
+    "postcss": "^8.5.6",
     "tsdown": "^0.14.1",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "postcss": ">=8",
-    "postcss-html": ">=1",
-    "postcss-scss": ">=4",
     "stylelint": ">=16"
   },
   "peerDependenciesMeta": {
@@ -77,13 +75,7 @@
       "optional": false
     },
     "postcss": {
-      "optional": true
-    },
-    "postcss-scss": {
-      "optional": true
-    },
-    "postcss-html": {
-      "optional": true
+      "optional": false
     }
   },
   "changelog": {
