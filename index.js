@@ -29,6 +29,17 @@ export default {
         // SCSS 变量相关
         'declaration-property-value-no-unknown': null,
 
+        // SCSS 嵌套规则
+        'scss/no-global-function-names': null,
+
+        // 嵌套选择器规则
+        'selector-nested-pattern': null,
+        'selector-no-qualifying-type': null,
+        'selector-no-vendor-prefix': null,
+
+        // 禁用嵌套选择器缺少作用域根的检查（允许在 mixin 中使用 & 语法）
+        'nesting-selector-no-missing-scoping-root': null,
+
         // CSS 选择器命名
         'selector-class-pattern': null,
 
