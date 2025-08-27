@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-cmyr",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "author": "CaoMeiYouRen",
   "description": "草梅友仁个人使用的 stylelint 检测规范",
   "license": "MIT",
