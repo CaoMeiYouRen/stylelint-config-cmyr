@@ -1,6 +1,6 @@
 {
   "name": "stylelint-config-cmyr",
-  "version": "0.3.0",
+  "version": "1.0.0-beta.3",
   "author": "CaoMeiYouRen",
   "description": "草梅友仁个人使用的 stylelint 检测规范",
   "license": "MIT",
@@ -18,7 +18,7 @@
     "./package.json": "./package.json"
   },
   "engines": {
-    "node": ">=16"
+    "node": ">=18"
   },
   "scripts": {
     "deploy-beta": "nrm use npm && npm publish --tag beta",
@@ -27,7 +27,8 @@
     "lint:css": "stylelint ./**/*.{css,scss,sass,vue} --fix",
     "test": "stylelint test/**/*.{css,scss,sass,vue}",
     "release": "semantic-release",
-    "build": "cross-env NODE_ENV=production tsdown"
+    "build": "cross-env NODE_ENV=production tsdown",
+    "prepare": "husky install"
   },
   "keywords": [
     "code",
@@ -45,25 +46,28 @@
   },
   "homepage": "https://github.com/CaoMeiYouRen/stylelint-config-cmyr#readme",
   "dependencies": {
+    "postcss-html": "^1.8.0",
+    "postcss-scss": "^4.0.9",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-standard": "^39.0.0",
     "stylelint-config-standard-scss": "^15.0.1",
     "stylelint-order": "^7.0.0",
-    "stylelint-scss": "^6.12.1",
-    "postcss-html": "^1.8.0",
-    "postcss-scss": "^4.0.9"
+    "stylelint-scss": "^6.12.1"
   },
   "devDependencies": {
-    "@semantic-release/changelog": "^6.0.2",
-    "@semantic-release/git": "^10.0.1",
+    "@commitlint/cli": "^19.8.1",
     "@types/node": "^24.3.0",
-    "conventional-changelog-cmyr-config": "^2.1.2",
+    "commitlint-config-cmyr": "1.0.0-beta.2",
     "cross-env": "^10.0.0",
+    "cz-conventional-changelog-cmyr": "2.0.0-beta.3",
     "eslint": "^9.33.0",
     "eslint-config-cmyr": "2.0.0-beta.15",
-    "semantic-release": "^21.0.0",
-    "stylelint": "^16.23.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "postcss": "^8.5.6",
+    "semantic-release": "^24.2.7",
+    "semantic-release-cmyr-config": "1.0.0-beta.2",
+    "stylelint": "^16.23.1",
     "tsdown": "^0.14.1",
     "typescript": "^5.9.2"
   },
@@ -81,5 +85,18 @@
   },
   "changelog": {
     "language": "zh"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "npm run lint"
+    ],
+    "*.{css,scss,sass,vue}": [
+      "npm run lint:css"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog-cmyr"
+    }
   }
 }

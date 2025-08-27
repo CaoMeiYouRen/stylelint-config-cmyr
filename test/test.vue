@@ -111,13 +111,13 @@ export default {
     border: 1px solid #e1e8ed;
     border-radius: 8px;
     padding: 24px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
 }
 
 .card-header {
