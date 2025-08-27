@@ -1,5 +1,12 @@
 # stylelint-config-cmyr
 
+# [1.0.0-beta.3](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/compare/v1.0.0-beta.2...v1.0.0-beta.3) (2025-08-27)
+
+
+### ✨ 新功能
+
+* 更新 Node.js 版本要求至 18 ([bb627f0](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/commit/bb627f0))
+
 # [1.0.0-beta.2](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/compare/v1.0.0-beta.1...v1.0.0-beta.2) (2025-08-24)
 
 
