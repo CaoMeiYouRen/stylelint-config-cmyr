@@ -64,8 +64,8 @@ importers:
         specifier: ^24.2.7
         version: 24.2.7(typescript@5.9.2)
       semantic-release-cmyr-config:
-        specifier: 1.0.0-beta.2
-        version: 1.0.0-beta.2(semantic-release@24.2.7(typescript@5.9.2))
+        specifier: 1.0.0
+        version: 1.0.0(semantic-release@24.2.7(typescript@5.9.2))
       stylelint:
         specifier: ^16.23.1
         version: 16.23.1(typescript@5.9.2)
@@ -946,9 +946,9 @@ packages:
     resolution: {integrity: sha512-CLf+zr6St0wIxos4bmaKHRXWAcsCXrJU6F4VdNDrGRK3B8LDLKoX3zuMV5GhtbGkVR/LohZ6MT6im43vZLSjmA==}
     engines: {node: '>=18'}
 
-  conventional-changelog-cmyr-config@3.0.0-beta.3:
-    resolution: {integrity: sha512-7ZMG1n299y8zPgdgXo7cjq5JtzZAEd8MB9qRdZ20V18t86o0jw6m5TUvBhv2dNwJzvvTEH01gx1QF7dPisWsBw==}
-    engines: {node: '>=20.10'}
+  conventional-changelog-cmyr-config@3.0.0:
+    resolution: {integrity: sha512-QhD/0545XRgspCcopi2d5L8ffFdiqsaqqcQfGRprv18CVH0NUQUtfORpbNqEOWwl1VxYj1pZUcVyxHTSfam1Xg==}
+    engines: {node: '>=18'}
 
   conventional-changelog-conventionalcommits@7.0.2:
     resolution: {integrity: sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==}
@@ -2918,8 +2918,8 @@ packages:
   safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  semantic-release-cmyr-config@1.0.0-beta.2:
-    resolution: {integrity: sha512-YojWYBXvE4LFg7agO28tgpbN67jbp5A4uDmacwZU4jLjj1Xg7GcRuRDwUsTtXyVya5Ys6fVd4p+EqHxZgxywMA==}
+  semantic-release-cmyr-config@1.0.0:
+    resolution: {integrity: sha512-RCZjnZGhDz1xgVw1xsbOMJGKXHaSPZz+DlHKsgz4975fRvkkFjk7zAcappLMZohAWnJref9iQBQqEASHvfr/Sw==}
     engines: {node: '>=18'}
     peerDependencies:
       semantic-release: '>=24'
@@ -4533,7 +4533,7 @@ snapshots:
     dependencies:
       compare-func: 2.0.0
 
-  conventional-changelog-cmyr-config@3.0.0-beta.3:
+  conventional-changelog-cmyr-config@3.0.0:
     dependencies:
       compare-func: 2.0.0
       debug: 4.4.1
@@ -6751,11 +6751,11 @@ snapshots:
 
   safer-buffer@2.1.2: {}
 
-  semantic-release-cmyr-config@1.0.0-beta.2(semantic-release@24.2.7(typescript@5.9.2)):
+  semantic-release-cmyr-config@1.0.0(semantic-release@24.2.7(typescript@5.9.2)):
     dependencies:
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.7(typescript@5.9.2))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.7(typescript@5.9.2))
-      conventional-changelog-cmyr-config: 3.0.0-beta.3
+      conventional-changelog-cmyr-config: 3.0.0
       conventional-changelog-writer: 8.2.0
       semantic-release: 24.2.7(typescript@5.9.2)
     transitivePeerDependencies:
