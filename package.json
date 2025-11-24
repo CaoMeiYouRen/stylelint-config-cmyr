@@ -57,18 +57,18 @@
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
     "@types/node": "^24.3.0",
-    "commitlint-config-cmyr": "1.0.0-beta.3",
+    "commitlint-config-cmyr": "1.0.0",
     "cross-env": "^10.0.0",
-    "cz-conventional-changelog-cmyr": "2.0.0-beta.3",
+    "cz-conventional-changelog-cmyr": "2.0.0",
     "eslint": "^9.33.0",
-    "eslint-config-cmyr": "2.0.0-beta.15",
+    "eslint-config-cmyr": "2.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "postcss": "^8.5.6",
     "semantic-release": "^24.2.7",
-    "semantic-release-cmyr-config": "1.0.0-beta.2",
+    "semantic-release-cmyr-config": "1.0.0",
     "stylelint": "^16.23.1",
-    "tsdown": "^0.14.1",
+    "tsdown": "^0.15.6",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
