@@ -68,7 +68,7 @@
     "semantic-release": "^25.0.1",
     "semantic-release-cmyr-config": "1.0.1",
     "stylelint": "^16.23.1",
-    "tsdown": "^0.15.6",
+    "tsdown": "^0.16.8",
     "typescript": "^5.9.2"
   },
   "peerDependencies": {
