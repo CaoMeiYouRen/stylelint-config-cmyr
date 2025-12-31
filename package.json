@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^20.1.0",
-    "@types/node": "^24.3.0",
+    "@types/node": "^25.0.3",
     "commitlint-config-cmyr": "1.0.0",
     "cross-env": "^10.0.0",
     "cz-conventional-changelog-cmyr": "2.0.0",
