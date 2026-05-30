@@ -22,3 +22,6 @@ trim_trailing_whitespace = false
 end_of_line = lf
 [package.json]
 indent_size = 2
+
+[*.yaml]
+indent_size = 2
