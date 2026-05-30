@@ -4,6 +4,14 @@ on:
     branches:
       - master
       - beta
+
+permissions:
+  id-token: write # Required for OIDC
+  packages: write
+  contents: write
+  issues: write
+  pull-requests: write
+
 jobs:
   release:
     name: Release
@@ -27,5 +35,4 @@ jobs:
       - run: pnpm run build
       - env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: pnpm run release
