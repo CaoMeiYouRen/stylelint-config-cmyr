@@ -55,21 +55,21 @@
     "stylelint-scss": "^7.1.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
+    "@commitlint/cli": "^21.0.2",
     "@types/node": "^25.0.3",
-    "commitlint-config-cmyr": "1.0.0",
+    "commitlint-config-cmyr": "1.0.1",
     "cross-env": "^10.0.0",
     "cz-conventional-changelog-cmyr": "2.0.0",
     "eslint": "^9.33.0",
-    "eslint-config-cmyr": "2.0.1",
+    "eslint-config-cmyr": "2.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^17.0.5",
     "postcss": "^8.5.6",
     "semantic-release": "^25.0.1",
-    "semantic-release-cmyr-config": "1.0.1",
+    "semantic-release-cmyr-config": "1.0.2",
     "stylelint": "17.12.0",
-    "tsdown": "^0.21.7",
-    "typescript": "^5.9.2"
+    "tsdown": "^0.22.1",
+    "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "postcss": ">=8",
