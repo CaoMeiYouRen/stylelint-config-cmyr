@@ -23,7 +23,7 @@
 
 -   🚀 **开箱即用** - 预配置了常用的 Stylelint 规则
 -   🎯 **多格式支持** - 支持 CSS、SCSS、SASS、Vue、HTML 文件
--   📦 **现代化配置** - 基于 `stylelint-config-standard` 和 `stylelint-config-standard-scss`
+-   📦 **现代化配置** - 基于 `stylelint-config-standard` 和 `stylelint-config-recommended-scss`
 -   🔧 **灵活配置** - 针对 Vue 项目进行了特殊优化
 -   🛠️ **属性排序** - 内置 CSS 属性排序规则
 
@@ -35,6 +35,8 @@
 -   **HTML** - HTML 文件中的内联样式
 
 ## 🚀 快速开始
+
+> 需要 `stylelint@^18.0.0`（仅支持 stylelint 18；Node.js 版本要求与 stylelint 18 一致）。
 
 ### 安装
 
@@ -100,8 +102,10 @@ npm run lint:css:check
 本配置基于以下官方配置扩展：
 
 -   `stylelint-config-standard` - Stylelint 标准配置
--   `stylelint-config-standard-scss` - SCSS 标准配置
+-   `stylelint-config-recommended-scss` - SCSS 推荐配置（另补充了 `stylelint-config-standard-scss` 的附加规则）
 -   `stylelint-config-html` - HTML 文件支持
+
+> `stylelint-config-standard-scss` 尚未兼容 stylelint 18，因此暂时改为组合 `stylelint-config-standard` + `stylelint-config-recommended-scss`，规则集保持不变。
 
 ### 插件支持
 
@@ -120,6 +124,7 @@ npm run lint:css:check
 -   允许 SCSS 变量和函数
 -   支持嵌套语法
 -   自动处理 `@import` 和 `@mixin` 规则
+-   关闭 `value-no-invalid`：stylelint 18 新增的 CSS 值校验无法识别 SCSS 函数与变量
 
 #### 灵活的规则设置
 

@@ -18,7 +18,7 @@
     "./package.json": "./package.json"
   },
   "engines": {
-    "node": ">=18"
+    "node": "^22.22.2 || ^24.15.0 || >=26.0.0"
   },
   "scripts": {
     "deploy-beta": "nrm use npm && npm publish --tag beta",
@@ -46,13 +46,13 @@
   },
   "homepage": "https://github.com/CaoMeiYouRen/stylelint-config-cmyr#readme",
   "dependencies": {
-    "postcss-html": "^1.8.0",
+    "postcss-html": "^2.0.0",
     "postcss-scss": "^4.0.9",
-    "stylelint-config-html": "^1.1.0",
-    "stylelint-config-standard": "^40.0.0",
-    "stylelint-config-standard-scss": "^17.0.0",
-    "stylelint-order": "^8.1.1",
-    "stylelint-scss": "^7.1.1"
+    "stylelint-config-html": "^2.0.0",
+    "stylelint-config-recommended-scss": "^17.0.1",
+    "stylelint-config-standard": "^41.0.0",
+    "stylelint-order": "^8.1.3",
+    "stylelint-scss": "^7.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.0.2",
@@ -67,13 +67,13 @@
     "postcss": "^8.5.6",
     "semantic-release": "^25.0.1",
     "semantic-release-cmyr-config": "1.1.0",
-    "stylelint": "17.16.0",
+    "stylelint": "18.0.0",
     "tsdown": "^0.23.0",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
     "postcss": ">=8",
-    "stylelint": ">=16"
+    "stylelint": "^18.0.0"
   },
   "peerDependenciesMeta": {
     "stylelint": {
