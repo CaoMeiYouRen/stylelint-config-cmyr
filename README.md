@@ -184,11 +184,19 @@ export default {
 -   `test/test.css` - 标准 CSS 测试文件
 -   `test/test.scss` - SCSS 语法测试文件
 -   `test/test.vue` - Vue 组件测试文件
+-   `test/test.html` - HTML 内联样式测试文件
+
+`test/config.test.js` 通过 stylelint Node API 校验配置：
+
+-   全部测试文件零告警，并确认每个文件都被实际处理（避免“没 lint 到文件也算通过”）
+-   关键规则仍在生效（颜色、属性顺序、SCSS 命名等），防止规则被误关
+-   Vue 伪类、空样式块、SCSS 函数等允许项不被误报
+-   构建产物 `dist/index.cjs` 可被 `require` 正常使用
 
 运行测试：
 
 ```bash
-# 运行内置测试
+# 运行内置测试（会先构建，再执行 node:test）
 npm test
 
 # 或者
