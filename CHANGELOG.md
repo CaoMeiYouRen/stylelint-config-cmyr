@@ -1,5 +1,12 @@
 # stylelint-config-cmyr
 
+# [1.1.0](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/compare/v1.0.0...v1.1.0) (2026-11-11)
+
+
+### ✨ 新功能
+
+* 支持 stylelint 18 ([c19f9fa](https://github.com/CaoMeiYouRen/stylelint-config-cmyr/commit/c19f9fa))
+
 # 1.0.0 (2025-08-27)
 
 
