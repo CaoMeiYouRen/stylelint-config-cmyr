@@ -19,7 +19,7 @@ export default {
             customSyntax: 'postcss-html',
         },
         {
-            files: ['**/*.scss', '**/*.sass'],
+            files: ['**/*.scss'],
             customSyntax: 'postcss-scss',
         },
     ],

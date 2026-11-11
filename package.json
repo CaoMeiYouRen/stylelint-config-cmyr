@@ -24,7 +24,7 @@
     "deploy-beta": "nrm use npm && npm publish --tag beta",
     "deploy": "nrm use npm && npm publish",
     "lint": "cross-env NODE_ENV=production eslint --fix --ext .js",
-    "lint:css": "stylelint ./**/*.{css,scss,sass,vue,html} --fix",
+    "lint:css": "stylelint ./**/*.{css,scss,vue,html} --fix",
     "test": "pnpm run build && node --test --test-reporter=spec",
     "release": "semantic-release",
     "build": "cross-env NODE_ENV=production tsdown",
@@ -90,7 +90,7 @@
     "*.{js,ts,vue}": [
       "npm run lint"
     ],
-    "*.{css,scss,sass,vue,html}": [
+    "*.{css,scss,vue,html}": [
       "npm run lint:css"
     ]
   },

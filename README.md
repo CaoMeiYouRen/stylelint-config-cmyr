@@ -22,7 +22,7 @@
 ## ✨ 特性
 
 -   🚀 **开箱即用** - 预配置了常用的 Stylelint 规则
--   🎯 **多格式支持** - 支持 CSS、SCSS、SASS、Vue、HTML 文件
+-   🎯 **多格式支持** - 支持 CSS、SCSS、Vue、HTML 文件
 -   📦 **现代化配置** - 基于 `stylelint-config-standard` 和 `stylelint-config-recommended-scss`
 -   🔧 **灵活配置** - 针对 Vue 项目进行了特殊优化
 -   🛠️ **属性排序** - 内置 CSS 属性排序规则
@@ -30,9 +30,11 @@
 ## 📋 支持的文件类型
 
 -   **CSS** - 标准 CSS 文件
--   **SCSS/SASS** - Sass 预处理器文件
+-   **SCSS** - Sass 预处理器文件
 -   **Vue** - Vue 单文件组件中的样式
 -   **HTML** - HTML 文件中的内联样式
+
+> 仅支持 SCSS 语法，`.sass` 缩进语法不在支持范围内。
 
 ## 🚀 快速开始
 
@@ -79,8 +81,8 @@ export default {
 ```json
 {
     "scripts": {
-        "lint:css": "stylelint \"src/**/*.{css,scss,sass,vue,html}\" --fix",
-        "lint:css:check": "stylelint \"src/**/*.{css,scss,sass,vue,html}\""
+        "lint:css": "stylelint \"src/**/*.{css,scss,vue,html}\" --fix",
+        "lint:css:check": "stylelint \"src/**/*.{css,scss,vue,html}\""
     }
 }
 ```
@@ -212,7 +214,7 @@ pnpm test
 ```json
 {
     "lint-staged": {
-        "*.{css,scss,sass,vue,html}": ["stylelint --fix", "git add"]
+        "*.{css,scss,vue,html}": ["stylelint --fix", "git add"]
     }
 }
 ```
@@ -223,7 +225,7 @@ pnpm test
 
 ```json
 {
-    "stylelint.validate": ["css", "scss", "sass", "vue", "html"],
+    "stylelint.validate": ["css", "scss", "vue", "html"],
     "editor.codeActionsOnSave": {
         "source.fixAll.stylelint": true
     }
